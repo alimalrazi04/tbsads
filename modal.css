@@ -1,0 +1,188 @@
+.adf_image_overlay_section {
+  position: relative;
+}
+.adf-modal-info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(9, 6, 6, 0.5);
+  z-index: 1000;
+  display: none;
+  box-sizing: border-box;
+  overflow-y: auto;
+  text-align: left;
+  visibility: visible !important;
+}
+
+.adf-modal-info * {
+  box-sizing: border-box;
+}
+
+.adf-modal-info__window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 600px;
+  height: fit-content;
+  padding: 27px 37px 60px;
+  background: #fff;
+  border-radius: 4px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.adf-modal-info_xs .adf-modal-info__window {
+  width: 300px;
+  padding: 14px 16px 30px;
+  top: 10%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.adf-modal-info__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background: 0 0;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.adf-modal-info_xs .adf-modal-info__close {
+  top: 8px;
+  right: 8px;
+}
+
+.adf-modal-info__close:hover {
+  opacity: 0.8;
+}
+
+.adf-modal-info__close:before,
+.adf-modal-info__close:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 9px;
+  bottom: 0;
+  width: 2px;
+  background: #aaa;
+}
+
+.adf-modal-info__close:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.adf-modal-info__close:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.adf-modal-info__logo {
+  display: block !important;
+  background: transparent
+    no-repeat;
+  background-size: contain;
+  width: 194px;
+  height: 28px;
+  margin: 0 auto;
+}
+
+.adf-modal-info__text {
+  margin-top: 30px;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, segoe ui, Helvetica,
+    Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000;
+  padding: 0 5px;
+}
+
+.adf-modal-info_xs .adf-modal-info__text {
+  margin-top: 15px;
+}
+
+.adf-modal-info__text a {
+  display: inline !important;
+  color: #027bff !important;
+  text-decoration: none;
+}
+
+.adf-modal-info__text a:hover {
+  color: #027bff !important;
+  text-decoration: underline;
+}
+
+.adf-modal-info__text p {
+  margin: 0;
+}
+
+.adf-modal-info__text p + p {
+  margin-top: 12px;
+}
+
+a.adf-link:hover {
+  background: 0 0;
+}
+
+.showZoomIn {
+  animation-name: showZoomIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+.hideZoomOut {
+  animation-name: hideZoomOut;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+.bgcolor {
+  animation-name: bgcolor;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+.bgcolorRemove {
+  animation-name: bgcolorRemove;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+@keyframes showZoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes hideZoomOut {
+  100% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+
+@keyframes bgcolor {
+  0% {
+    background-color: inherit;
+  }
+  100% {
+    background-color: rgba(9, 6, 6, 0.5);
+  }
+}
+
+@keyframes bgcolorRemove {
+  100% {
+    background-color: inherit;
+  }
+}
