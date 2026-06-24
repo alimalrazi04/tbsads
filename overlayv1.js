@@ -422,11 +422,11 @@ src="https://www.tbsnews.net/sites/default/files/uploads/2026/06/23/tropical_hom
 </div>
 
 <!-- modal info --> 
-<link rel="stylesheet" href="https://content-adfinix.sgp1.cdn.digitaloceanspaces.com/overlay/apex-takeover/modal.css?v=1.0">
+<link rel="stylesheet" href="https://tbsads.pages.dev/modal.css">
 <div class="adf-modal-info" id="adf-modal-info">
-<script src="https://content-adfinix.sgp1.cdn.digitaloceanspaces.com/overlay/apex-takeover/modal.js"></script>
+<script src="https://tbsads.pages.dev/modal.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://tbsads.pages.dev/jquery.min.js"></script>
 
 <script>
 
